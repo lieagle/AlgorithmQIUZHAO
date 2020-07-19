@@ -1,4 +1,4 @@
-#4题 leetcode 88. Merge Sorted Array
+#leetcode 88. Merge Sorted Array
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """

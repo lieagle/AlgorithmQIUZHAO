@@ -1,4 +1,4 @@
-#3题 leetcode 21. Merge Two Sorted Lists
+#leetcode 21. Merge Two Sorted Lists
 #迭代，先保证较小的链表为l1，然后依次比两个链表的头节点，把小的放到新链表的头，不断比较和加长新链表
 # Definition for singly-linked list.
 # class ListNode:

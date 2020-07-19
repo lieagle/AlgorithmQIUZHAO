@@ -1,4 +1,4 @@
-#5题.Leetcode 1.Two Sum
+#Leetcode 1.Two Sum
 
 #哈希表：a+b == target转换成for each a: check (target  - a) exists in nums.
 #时间复杂度：O(n)

@@ -1,4 +1,4 @@
-#2题 leetcode 189. Rotate Array
+#leetcode 189. Rotate Array
 #使用一个额外的数组，其中将数组的每个元素放置在其正确位置，将新数组复制到原始数组。
 #时间复杂度：O(n)，由于使用另外一个数组，时间复杂度大。
 class Solution:
