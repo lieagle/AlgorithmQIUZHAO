@@ -1,12 +1,7 @@
 第一周学习笔记
 
-一、面试答题四件套：
-1.clarification，和面试官过一遍题，有些题要和面试官约定好大小写是不是敏感等；
-2.列出所有解决方案，找到最优的写，时间空间复杂度最小的；
-3.code
-4.写测试用例
+一、面试答题四件套：1.clarification，和面试官过一遍题，有些题要和面试官约定好大小写是不是敏感等；     2.列出所有解决方案，找到最优的写，时间空间复杂度最小的；   3.code    4.写测试用例
 最重要的：不要紧张，尽量利用已掌握的知识完成题目
-
 
 二、注意递归的三个思维要点
 所有的程序都可以分成这三种：if else, while, 递归
@@ -16,58 +11,18 @@
 2.找到最近、重复、子问题。
 3.数学归纳法思维.n=1,n=2成立，那么可以保证后面的成立。
 
-递归python代码模板：
-def recursion(level, param1, param2,...):
-	#第一块，recursion terminator递归终止条件
-	if level > MAX_LEVEL:
-		process_result
-		return
-	#第二块，process logic in current level处理当前逻辑
-	process(level, data...)
-	#第三块，下探到下一层drill down
-	self.recursion(level + 1, p1,...)
-	#第四块，递归完清理当前层，全局变量之类的（一般不用写）
+三、知识点回顾（栈、队列、双端队列、优先队列）：
 
-
-三、知识点回顾
-栈、队列、双端队列、优先队列：
-
-栈stack：先入后出,first in Last out,
-	添加删除皆为O(1),查询O(n)：因为元素无序，所以必须全部遍历
+栈stack：先入后出,first in Last out, 添加删除皆为O(1), 查询O(n)：因为元素无序，所以必须全部遍历
+	
 队列queue：先入先出，排队，添加删除皆为O(1),但是查询O(n)：因为元素无序，所以必须全部遍历
 	queue的API是offer,取出是poll,也可以用add和remove，区别是offer和poll不抛异常，
 	会通过返回值，如果queue已经为空，再调用poll返回的就是null，而remove和add会抛异常。
+
 双端队列Deque(Double-End Queue)：栈和队列两者结合体，就是一个队列，可以从前面或尾端添加和去除元素
     添加删除皆为O(1),查询O(n)：因为元素无序，所以必须全部遍历
+
 优先队列Priority Queue：插入操作：O(1)；
 	取出：O(logn)，按照元素的优先级取出。因为优先级，所以元素有序，所以O(logn)。
-
-站和队列的python实现：
-class Stack:
-	def __init__(self):
-		self.items = ['x', 'y']
-	def push(self, item):
-		self.items.append(item)
-	def pop(self):
-		self.items.pop()
-	def length(self):
-		return len(self.items)
-
-class Queue:
-	def __init__(self):
-		self.queue = []
-	def enqueue(self, item):
-		self.queue.append(item)
-	def dequeue(self):
-		if len(self.queue) < 1:
-			return None
-		return self.queue.pop(0)
-	def size(self):
-		return len(self.queue)
-
-
-
-
-
 
 
