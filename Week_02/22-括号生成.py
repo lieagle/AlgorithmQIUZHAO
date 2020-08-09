@@ -6,7 +6,7 @@
 #产生右分支的时候，还受到左分支的限制，右边剩余可以使用的括号数量一定得在严格大于左边剩余的数量的时候，才可以产生分支；
 #在左边和右边剩余的括号数都等于0的时候结算
 
-#left,right是未用的括号数
+#left,right是未用的括号数，空间O(2^n)?    时间O(2^n)
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         res = []
@@ -24,7 +24,7 @@ class Solution:
         return res
 
 
-#left，right代表已用的括号数
+#left，right代表已用的括号数,空间O(2^n)?    时间O(2^n)
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         res = []
